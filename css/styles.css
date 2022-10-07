@@ -305,6 +305,8 @@ body {
 .bottom {
   border: 1px solid #EEEEEE;
   padding: 30px 70px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .section-team-item {
@@ -429,8 +431,9 @@ body {
 }
 
 .bottom-card {
-  background: #FFFFFF;
+  padding: 20px 24px;
   border: 1px solid #EEEEEE;
+  width: 370px;
 }
 
 .card-title {

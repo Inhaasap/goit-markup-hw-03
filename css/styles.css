@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -82,14 +82,13 @@ body {
 /* header */
 
 .header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   
 }
 
 .flex {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
 }
 
@@ -130,9 +129,9 @@ body {
   padding-bottom: 32px;
 }
 
-/* .site-nav .item + .item {
+.item:not(:last-child) {
   margin-right: 0;
-} */
+}
 
 
 .link:hover,
@@ -153,10 +152,6 @@ body {
   margin-right: 50px;
 }
 
-/* .site-contact .item + .item {
-  margin-right: 0;
-} */
-
 .contact-link {
   color: var(--color-text-secondary);
   font-weight: 500;
@@ -175,7 +170,7 @@ body {
 
 .hero-section {
   background-color: var(--accent-bg-color);
-  padding: 200px ;
+  padding: 200px 0 ;
   text-align: center;
 }
 
@@ -207,6 +202,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   cursor: pointer;
+  border: none;
   
 }
 
@@ -261,7 +257,9 @@ body {
 
 /* -----------what we do --------- */
 
-/* .section-work {} */
+.section-work {
+  padding-top: 0;
+}
 
 .section-work-title {
   color: var(--color-text-primary);
@@ -294,7 +292,7 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .section-team-list {
@@ -303,14 +301,15 @@ body {
 }
 
 .bottom {
-  border: 1px solid #EEEEEE;
-  padding: 30px 70px;
+  padding: 30px 0;
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .section-team-item {
   width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-undertitle {
@@ -332,7 +331,7 @@ body {
 
 .footer {
   background-color: var(--accent-bg-color);
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .logo-footer {
@@ -350,12 +349,18 @@ body {
 
 .footer-address {
   font-style: normal;
-  margin-bottom: 9px;
+  margin-top: 20px;
 }
 
 /* .footer-list {} */
 
-/* .footer-list-item {} */
+.footer-list-item {
+  margin-bottom: 9px;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-right: 0;
+}
 
 .footer-list-link {
   color: var(--primary-bg-color);
@@ -381,7 +386,6 @@ body {
   display: inline-block;
   border-radius: 4px;
   padding: 6px 22px;
-  min-width: 125px;
 
   color: var(--color-text-primary);
   background: var(--seconadary-bg-color);
@@ -434,6 +438,7 @@ body {
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
   width: 370px;
+  border-top: 0;
 }
 
 .card-title {

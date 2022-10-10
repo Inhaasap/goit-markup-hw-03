@@ -147,13 +147,13 @@ body {
   margin-left: auto;
 }
 
-.site-contact .item {
+.site-contact .item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link:not(:last-child) {
+/* .contact-link:not(:last-child) {
   margin-right: 0;
-}
+} */
 
 .contact-link {
   color: var(--color-text-secondary);
@@ -364,12 +364,11 @@ body {
 
 /* .footer-list {} */
 
-.footer-list-item {
-  margin-bottom: 9px;
-}
+/* .footer-list-item {
+} */
 
 .footer-list-item:not(:last-child) {
-  margin-bottom: 0;
+  margin-bottom: 9px;
 }
 
 .footer-list-link {
